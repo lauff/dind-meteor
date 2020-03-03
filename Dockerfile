@@ -24,12 +24,12 @@ RUN apt-get update && \
    apt-get clean
 
 
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 
 RUN apt-get update && \
    apt-get -y install nodejs build-essential git
    
-RUN curl https://install.meteor.com/ | sh
+RUN curl https://install.meteor.com/?release=1.8 | sh
 
 RUN mkdir -p /tmp/meteor-build/
 
