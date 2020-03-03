@@ -1,5 +1,6 @@
 # FROM: https://github.com/Stieneee/docker-in-ubuntu/blob/master/Dockerfile
 # EXPLAINED AT: https://tylerstiene.ca/blog/gitlab-ci-docker-build-meteor...-please/
+# VERSIONS: latest Meteor with Node v12
 
 FROM ubuntu:latest
 
