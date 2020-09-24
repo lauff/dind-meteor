@@ -28,7 +28,9 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 
 RUN apt-get update && \
    apt-get -y install nodejs build-essential git
-   
+
+RUN npm install -g node-gyp && npm install -g mup
+
 RUN curl https://install.meteor.com/ | sh
 
 RUN mkdir -p /tmp/meteor-build/
